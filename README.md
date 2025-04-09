@@ -105,3 +105,20 @@ create table users
         foreign key (user_credit_card) references credit_card (credit_card_id)
 );
 ```
+
+### ENDPOINTS
+
+```bash
+http://localhost:3000/clients/emit-id/{phone}
+http://localhost:3000/clients/emit-id/1733
+
+http://localhost:3000/clients/close
+```
+
+## CAMPOS SUGERIDOS
+- NOMBRE
+- APELLIDOS
+- TELEFONO
+- TARJETA DE CREDITO
+- CORREO
+- FECHA NACIMIENTO
