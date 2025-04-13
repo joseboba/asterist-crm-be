@@ -4,9 +4,13 @@ import { Column, Entity, PrimaryColumn } from "typeorm";
 @Entity('users')
 export class UserEntity {
     @PrimaryColumn()
-    private phone: string;
-    @Column({ name: 'prepaid_card_number' })
-    private prepaidCardNumber: string;
+    phone: string;
     @Column()
-    private email: string;
+    names: string;
+    @Column()
+    lastnames: string;
+    @Column({ name: 'birth_date' })
+    birthdate: Date;
+    @Column()
+    email: string;
 }

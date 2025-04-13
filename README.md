@@ -99,6 +99,9 @@ create table users
     prepaid_card_number varchar(8)   null,
     email               varchar(50)  null,
     user_credit_card    int          null,
+    names               varchar(100) null,
+    lastnames           varchar(100) null,
+    birth_date          datetime     null,
     constraint FK_PREPAID_CARD
         foreign key (prepaid_card_number) references prepaid_card (card_number),
     constraint fk_user_credit_card
@@ -119,6 +122,5 @@ http://localhost:3000/clients/close
 - NOMBRE
 - APELLIDOS
 - TELEFONO
-- TARJETA DE CREDITO
 - CORREO
 - FECHA NACIMIENTO
